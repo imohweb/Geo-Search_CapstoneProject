@@ -1,0 +1,54 @@
+<!-- HTML CODE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Weather App - JavaScript</title>
+    <link rel="stylesheet" href="font/Rimouski.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-img">
+        <img src="Imohweb geolocation.png" height ="100px" width ="100" alt="Imohweb geolocation">
+      <div class="container"></div>
+      <div class="topnav">
+          <a href="default.html">Home</a>
+          <a href="news.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">Service</a>
+          <a href="news.html">News</a>
+          <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+    <div id="map"></div>
+      </div>
+    <h1>Welcome to Imohweb Geolocation Search</h1>
+    <p>Geo-Search is a tool that allows people to search for places and extract information such as
+      timezone, map and local weather conditions like temperature, wind speed, humidity, and
+      precipitation.</p>
+  
+    <div class="container">
+        <div class="app-title">
+            <p>Weather</p>
+        </div>
+        <div class="notification"> </div>
+        <div class="weather-container">
+            <div class="weather-icon">
+                <img src="icons/unknown.png" alt="">
+            </div>
+            <div class="temperature-value">
+                <p>- °<span>C</span></p>
+            </div>
+            <div class="temperature-description">
+                <p> - </p>
+            </div>
+            <div class="location">
+                <p>-</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAiAVRN3ib1pDwj1FWTG-sK-PyaPZ3jsY&libraries=places&callback=initAutocomplete"
+         async defer></script>
+</body>
+</html>
